@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 5000
 server.listen(PORT, () => console.log(`App is live on port ${PORT}`))
 
 io.on('connection', (socket) => {
-  socket.emit("hello from server", 1,"connected");
+  socket.emit("hello from server", 1,"connected man");
 
   socket.on("hello from client", (...args) => {
     console.log(args)
