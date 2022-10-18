@@ -11,6 +11,7 @@ io.on('connection', (socket) => {
 
   socket.on("hello from client", (...args) => {
     console.log(args)
+    socket.emit("check", 1, "check");
   });
 
 })
